@@ -31,7 +31,7 @@ gulp.task("styles", () => {
 
 gulp.task("images", () => {
   return gulp
-    .src("src/assets/images/*")
+    .src("src/assets/images/**")
     .pipe(imagemin())
     .pipe(gulp.dest("./public/assets/images/"));
 });
