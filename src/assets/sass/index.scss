@@ -91,6 +91,8 @@ body {
   .info {
     background: $darkGrey url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
     background-size: 20px;
+    margin-top: -1px;
+
     .info_block {
       color: #fff;
       width: 75%;

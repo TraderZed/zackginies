@@ -117,7 +117,8 @@ body {
       background-size: contain; }
   .info {
     background: #323136 url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
-    background-size: 20px; }
+    background-size: 20px;
+    margin-top: -1px; }
     .info .info_block {
       color: #fff;
       width: 75%; }
