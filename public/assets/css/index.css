@@ -105,8 +105,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   .masthead {
-    background: url(../images/backgrounds/zack-mobile.jpg) center no-repeat;
-    margin-bottom: 0; }
+    background: #fff url(../images/backgrounds/zack-mobile.jpg) center no-repeat;
+    margin-bottom: -1px; }
     .masthead h1 {
       font-size: 29px; }
     .masthead .arrow {
