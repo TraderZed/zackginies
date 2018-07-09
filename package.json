@@ -9,13 +9,13 @@
   "author": "Zack Ginies",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-core": "latest",
+    "babel-preset-es2015": "latest",
     "gulp": "latest",
-    "gulp-autoprefixer": "^5.0.0",
+    "gulp-autoprefixer": "latest",
     "gulp-imagemin": "latest",
     "gulp-sass": "latest",
-    "gulp-terser": "^1.0.1"
+    "gulp-terser": "latest"
   },
   "dependencies": {
     "gulp-haml": "latest"
