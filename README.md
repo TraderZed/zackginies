@@ -1,2 +1,3 @@
-# project-boilerplate
-Project boilerplate that uses Gulp, Haml, Sass and ES6
+# zackginies
+
+Landing page for zackginies.com - nothing fancy, just a splash page.
