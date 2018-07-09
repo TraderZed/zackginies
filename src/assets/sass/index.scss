@@ -74,13 +74,14 @@ body {
 @media only screen and (max-width: 768px) {
   .masthead {
     background: url(../images/backgrounds/zack-mobile.jpg) center no-repeat;
+    margin-bottom: 0;
 
     h1 {
       font-size: 29px;
     }
 
     .arrow {
-      bottom: 40px;
+      bottom: 80px;
       width: 20px;
       height: 20px;
       background: url(../images/icons/arrow_down_dark.png) 0 0 no-repeat;

@@ -6,6 +6,13 @@
 
     %title Zack Ginies - Toronto Based UX Developer
     %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/index.css"}
+    %script{async: "", src: "https://www.googletagmanager.com/gtag/js?id=UA-1039063-1"}
+      :javascript
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-1039063-1');
 
   %body
     %section.masthead
@@ -27,7 +34,6 @@
           %li Reusable ES6, React/Redux and jQuery
           %li JSON data structures
           %li Responsive builds
-          %li Unit tests
           %li Cross-browser testing and support
           %li User experience and usability design
 
