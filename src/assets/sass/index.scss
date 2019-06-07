@@ -17,16 +17,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../images/backgrounds/zack.jpg) center 0 fixed no-repeat;
-  background-size: cover;
-  width: 100%;
+  width: 90%;
   height: 100vh;
   margin-bottom: 50px;
+  padding: 0 5%;
   text-align: center;
   h1 {
     font-size: 142px;
     letter-spacing: 4px;
-    color: #fff;
+    color: #000;
   }
 
   .arrow {
@@ -34,19 +33,22 @@ body {
     bottom: 50px;
     width: 40px;
     height: 40px;
-    background: url(../images/icons/arrow_down_white.png) 0 0 no-repeat;
+    background: url(../images/icons/arrow_down_pink.svg) 0 0 no-repeat;
     background-size: contain;
     animation: bounce 2s infinite;
   }
 }
 
 /* INFO ------------------------------------------------------------*/
-
+.info {
+  background: $darkGrey url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
+  padding-top: 100px;
+}
 .info_block {
   position: relative;
   padding: 40px 5% 20px 5%;
   margin: 0 auto;
-  color: $darkGrey;
+  color: #fff;
   text-align: center;
   width: 50%;
 
@@ -62,7 +64,7 @@ body {
     list-style: none;
     li {
       padding: 0;
-      margin: 0 0 5px 0;
+      margin: 0 0 15px 0;
     }
   }
 
@@ -71,9 +73,14 @@ body {
   }
 }
 
+@media only screen and (max-width: 1112px) {
+  h1 span {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .masthead {
-    background: #fff url(../images/backgrounds/zack-mobile.jpg) center no-repeat;
     margin-bottom: -1px;
 
     h1 {
@@ -82,9 +89,6 @@ body {
 
     .arrow {
       bottom: 80px;
-      width: 20px;
-      height: 20px;
-      background: url(../images/icons/arrow_down_dark.png) 0 0 no-repeat;
       background-size: contain;
     }
   }
