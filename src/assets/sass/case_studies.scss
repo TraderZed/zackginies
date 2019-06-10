@@ -1,3 +1,7 @@
+@import "./normalize.css";
+@import "_mixins";
+@import "_colors";
+@import "_typography";
 
 .masthead {
   background: #1F3A93;
@@ -37,45 +41,72 @@
   }
 }
 
-.info {
+
+.main_content {
   background: #fff;
+}
 
-  .info_block {
-    color: #212121;
-    text-align: left;
-    width: 75%;
-  }
+.section__header {
+  width: 65%;
+}
 
-  .callout_block {
-    background: #1F3A93;
-
-    .callout_block__list {
-      color: #E2E5F1;
-      display: flex;
-
-      .callout_block__list-item {
-        text-align: center;
-        padding: 0 15px;
-        width: 25%;
-
-        p {
-          width: auto;
-        }
-      }
-    }
-
-    h4 {
-      color: #E2E5F1;
-      text-align: center;
-    }
-  }
-
-  blockquote {
-    font-size: 24px;
-    font-family: $Montserrat;
-  }
+.section__content {
+  color: #212121;
+  text-align: left;
+  width: 75%;
 
   p {
-    width: 75%;
+    width: 65%;
+  }
+}
+
+.section__callout {
+  background: #1F3A93;
+
+  h4, p {
+    color: #E2E5F1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section__callout--list {
+  color: #E2E5F1;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section__callout--list-item {
+  text-align: center;
+  padding: 0 15px;
+  width: 25%;
+
+  p {
+    width: auto;
+  }
+}
+
+.section__content-blockquote {
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: $Montserrat;
+  width: 70%;
+  margin: 75px auto;
+
+  span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    &::before {
+      content: "—";
+    }
   }
 }

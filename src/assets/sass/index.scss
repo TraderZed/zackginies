@@ -69,6 +69,7 @@ nav {
   margin-bottom: 50px;
   padding: 0 5%;
   text-align: center;
+
   h1 {
     font-size: 142px;
     letter-spacing: 4px;
@@ -87,6 +88,21 @@ nav {
 }
 
 /* INFO ------------------------------------------------------------*/
+
+.section {
+  position: relative;
+}
+
+.section__content {
+    position: relative;
+    padding: 40px 5% 20px 5%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}
+
+
 .info {
   background: $darkGrey url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
   padding-top: 100px;
