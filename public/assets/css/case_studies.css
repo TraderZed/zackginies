@@ -1,0 +1,55 @@
+.masthead {
+  background: #1F3A93;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end; }
+  .masthead .masthead__icon {
+    width: 25%;
+    margin: 0 5%; }
+  .masthead h4 {
+    color: #FF968D;
+    text-align: left;
+    width: 55%; }
+    .masthead h4 span {
+      display: block;
+      font-size: 16px;
+      font-weight: normal;
+      color: #fff; }
+  .masthead .arrow {
+    background: #fff;
+    position: relative;
+    bottom: 50px;
+    width: 55%;
+    height: 29px;
+    -webkit-mask-image: url(../images/icons/arrow_down_pink.svg);
+    mask-image: url(../images/icons/arrow_down_pink.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite; }
+
+.info {
+  background: #fff; }
+  .info .info_block {
+    color: #212121;
+    text-align: left;
+    width: 75%; }
+  .info .callout_block {
+    background: #1F3A93; }
+    .info .callout_block .callout_block__list {
+      color: #E2E5F1;
+      display: flex; }
+      .info .callout_block .callout_block__list .callout_block__list-item {
+        text-align: center;
+        padding: 0 15px;
+        width: 25%; }
+        .info .callout_block .callout_block__list .callout_block__list-item p {
+          width: auto; }
+    .info .callout_block h4 {
+      color: #E2E5F1;
+      text-align: center; }
+  .info p {
+    width: 75%; }

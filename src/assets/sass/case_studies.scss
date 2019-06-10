@@ -1,0 +1,81 @@
+
+.masthead {
+  background: #1F3A93;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  .masthead__icon {
+    width: 25%;
+    margin: 0 5%;
+  }
+
+  h4 {
+    color: #FF968D;
+    text-align: left;
+    width: 55%;
+
+    span {
+      display: block;
+      font-size: 16px;
+      font-weight: normal;
+      color: #fff;
+    }
+  }
+
+  .arrow {
+    background: #fff;
+    position: relative;
+    bottom: 50px;
+    width: 55%;
+    height: 29px;
+    mask-image: url(../images/icons/arrow_down_pink.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    animation: bounce 2s infinite;
+  }
+}
+
+.info {
+  background: #fff;
+
+  .info_block {
+    color: #212121;
+    text-align: left;
+    width: 75%;
+  }
+
+  .callout_block {
+    background: #1F3A93;
+
+    .callout_block__list {
+      color: #E2E5F1;
+      display: flex;
+
+      .callout_block__list-item {
+        text-align: center;
+        padding: 0 15px;
+        width: 25%;
+
+        p {
+          width: auto;
+        }
+      }
+    }
+
+    h4 {
+      color: #E2E5F1;
+      text-align: center;
+    }
+  }
+
+  blockquote {
+    font-size: 24px;
+    font-family: $Montserrat;
+  }
+
+  p {
+    width: 75%;
+  }
+}
