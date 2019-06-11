@@ -54,6 +54,7 @@
   color: #212121;
   text-align: left;
   width: 75%;
+  max-width: 1024px;
 
   p {
     width: 65%;
@@ -62,6 +63,8 @@
 
 .section__callout {
   background: #1F3A93;
+  margin: 40px 0;
+  padding-bottom: 40px;
 
   h4, p {
     color: #E2E5F1;
@@ -85,9 +88,40 @@
   padding: 0 15px;
   width: 25%;
 
+  &.item-one {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/dumbbell.svg) center 0 no-repeat;
+  }
+
+  &.item-two {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/dnd.svg) center 0 no-repeat;
+  }
+
+  &.item-three {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/community.svg) center 0 no-repeat;
+  }
+
+  &.item-four {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/heart.svg) center 0 no-repeat;
+  }
+
   p {
     width: auto;
   }
+}
+
+.section__content-image {
+  display: block;
+  margin: 75px 0;
+  width: 100%;
+}
+
+.section__content-image--small {
+  margin-top: 30px;
+  width: 30%;
 }
 
 .section__content-blockquote {
@@ -109,4 +143,44 @@
       content: "—";
     }
   }
+}
+
+.section__content-blockquote--small {
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-family: $Montserrat;
+  width: 70%;
+  margin: 25px auto 75px auto;
+}
+
+.section__visual-identity {
+  .section__callout {
+    overflow: hidden;
+  }
+
+  .section__callout ul {
+    float: left;
+    color: #E2E5F1;
+    font-family: $Montserrat;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    margin: 0 0 75px 0;
+    padding: 0;
+    width: 50%;
+
+    &:nth-child(odd) {
+      text-decoration: line-through;
+    }
+  }
+
+  .section__callout ul li {
+    margin-bottom: 15px;
+  }
+}
+
+.float-right {
+  float: right;
 }

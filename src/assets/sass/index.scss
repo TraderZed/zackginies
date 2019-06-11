@@ -76,6 +76,18 @@ nav {
     color: #000;
   }
 
+  .button__open-menu {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background: transparent url(../images/icons/close.svg) 0 0 no-repeat;
+    border: 0;
+    padding: 0;
+    height: 36px;
+    width: 36px;
+    text-indent: -99999px;
+  }
+
   .arrow {
     position: absolute;
     bottom: 50px;

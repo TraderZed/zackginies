@@ -56,6 +56,8 @@ h5 {
   font-family: "Lato", sans-serif;
   font-size: 24px;
   letter-spacing: 3px; }
+  h5.center {
+    text-align: center; }
 
 h6 {
   font-size: 14px;
@@ -114,12 +116,15 @@ a {
 .section__content {
   color: #212121;
   text-align: left;
-  width: 75%; }
+  width: 75%;
+  max-width: 1024px; }
   .section__content p {
     width: 65%; }
 
 .section__callout {
-  background: #1F3A93; }
+  background: #1F3A93;
+  margin: 40px 0;
+  padding-bottom: 40px; }
   .section__callout h4, .section__callout p {
     color: #E2E5F1;
     text-align: center;
@@ -138,8 +143,29 @@ a {
   text-align: center;
   padding: 0 15px;
   width: 25%; }
+  .section__callout--list-item.item-one {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/dumbbell.svg) center 0 no-repeat; }
+  .section__callout--list-item.item-two {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/dnd.svg) center 0 no-repeat; }
+  .section__callout--list-item.item-three {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/community.svg) center 0 no-repeat; }
+  .section__callout--list-item.item-four {
+    padding-top: 30px;
+    background: url(../images/case_studies/icons/heart.svg) center 0 no-repeat; }
   .section__callout--list-item p {
     width: auto; }
+
+.section__content-image {
+  display: block;
+  margin: 75px 0;
+  width: 100%; }
+
+.section__content-image--small {
+  margin-top: 30px;
+  width: 30%; }
 
 .section__content-blockquote {
   line-height: 40px;
@@ -156,3 +182,34 @@ a {
     letter-spacing: 2px; }
     .section__content-blockquote span::before {
       content: "—"; }
+
+.section__content-blockquote--small {
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  margin: 25px auto 75px auto; }
+
+.section__visual-identity .section__callout {
+  overflow: hidden; }
+
+.section__visual-identity .section__callout ul {
+  float: left;
+  color: #E2E5F1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+  margin: 0 0 75px 0;
+  padding: 0;
+  width: 50%; }
+  .section__visual-identity .section__callout ul:nth-child(odd) {
+    text-decoration: line-through; }
+
+.section__visual-identity .section__callout ul li {
+  margin-bottom: 15px; }
+
+.float-right {
+  float: right; }
