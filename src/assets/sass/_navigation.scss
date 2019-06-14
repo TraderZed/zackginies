@@ -1,0 +1,83 @@
+@import "./normalize.css";
+@import "_mixins";
+@import "_colors";
+@import "_typography";
+
+.nav__main {
+  background: $hotPink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  font-family: $Montserrat;
+  font-weight: bold;
+  height: 100vh;
+  width: 100%;
+  transform: translateY(-100vh);
+  z-index: 1;
+
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  &.open {
+    transform: translateY(0);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  li {
+    font-size: 60px;
+    line-height: 100%;
+    margin: 0 0 40px 0;
+
+    a {
+      color: #FDE7FA;
+    }
+
+    ul li a {
+      font-size: 48px;
+      color: #1F091C;
+    }
+  }
+}
+
+.button__close-menu {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  background: transparent url(../images/icons/close.svg) 0 0 no-repeat;
+  border: 0;
+  padding: 0;
+  height: 56px;
+  width: 56px;
+  text-indent: -99999px;
+  cursor: pointer;
+
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.button__open-menu {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  background: transparent url(../images/icons/menu.svg) 0 0 no-repeat;
+  border: 0;
+  padding: 0;
+  height: 56px;
+  width: 56px;
+  text-indent: -99999px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}

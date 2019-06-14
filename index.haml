@@ -2,7 +2,7 @@
   %head
     %meta{charset: "utf-8"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %meta{name: "description", content: "Zack Ginies is a Toronto based front-end and UX developer. He works primarily in HTML, CSS/LESS/Sass and Javascript. He has experience with PHP and has worked extensively with Wordpress. Currently working at Format.com."}
+    %meta{name: "description", content: "Zack Ginies is a Toronto based product and user experience designer. He is skilled at user research, testing and iterative design. He is also proficient in Sketch, Principle and InVision. In addition, he also has 10 years of front-end development experience."}
 
     %title Zack Ginies - Toronto Based Product and UX Designer
     %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/index.css"}
@@ -11,29 +11,31 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-1039063-1');
 
   %body
-    %nav
-      %button Close Menu
-      %ul
-        %li
-          %a{href: "/"} About
-        %li
-          %a{href: "/"} Case Studies
-          %ul
-            %li
-              %a{href: "/studies/calling.html"} Calling
-        %li
-          %a{href: "/values.html"} Values
-        %li
-          %a{href: "/contact.html"} Contact
+    %header
+      %button.button__open-menu Open Menu
+      %nav.nav__main
+        %button.button__close-menu Close Menu
+        %ul
+          %li
+            %a{href: "/"} About
+          %li
+            %a{href: "/work.html"} Work
+          %li
+            %a{href: "/"} Case Studies
+            %ul
+              %li
+                %a{href: "./calling.html"} Calling
+          %li
+            %a{href: "/contact.html"} Contact
     %section.masthead
-      %h1
-        Hi, I'm Zack!
-        %span a Toronto based product and UX designer
-      .arrow.animated.bounce
+      .section__content
+        %h1.masthead__header
+          Hi, I'm Zack!
+          %span a Toronto based product and UX designer
+        .arrow.animated.bounce
     %section.info
       .info_block
         %h2
@@ -74,3 +76,5 @@
         %p Still with me? Awesome!
         %p
           <a href="mailto:zack@zackginies.com" title="Email me!">Email me</a> or let's connect on <a href="https://www.linkedin.com/in/zack-ginies/" target="_blank" title="LinkedIn">LinkedIn</a>.
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+    %script{src: "public/assets/js/index.js"}
