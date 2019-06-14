@@ -181,6 +181,8 @@ a {
     .nav__main li ul li a {
       font-size: 48px;
       color: #1F091C; }
+    .nav__main li.active {
+      text-decoration: line-through; }
 
 .button__close-menu {
   position: absolute;

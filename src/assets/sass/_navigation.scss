@@ -44,6 +44,10 @@
       font-size: 48px;
       color: #1F091C;
     }
+
+    &.active {
+      text-decoration: line-through;
+    }
   }
 }
 
