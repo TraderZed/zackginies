@@ -55,6 +55,7 @@ h4 {
 h5 {
   font-family: "Lato", sans-serif;
   font-size: 24px;
+  line-height: 32px;
   letter-spacing: 3px; }
   h5.center {
     text-align: center; }
@@ -100,6 +101,7 @@ header .button__open-menu {
     .masthead h4 span {
       display: block;
       font-size: 16px;
+      line-height: 24px;
       font-weight: normal;
       color: #fff; }
   .masthead .arrow {
@@ -184,6 +186,7 @@ header .button__open-menu {
 
 .section__content-image--small {
   margin-top: 30px;
+  margin-left: 30px;
   width: 30%; }
 
 .section__content-blockquote {
@@ -198,7 +201,9 @@ header .button__open-menu {
     display: block;
     font-weight: normal;
     font-size: 12px;
-    letter-spacing: 2px; }
+    line-height: 18px;
+    letter-spacing: 2px;
+    padding-top: 15px; }
     .section__content-blockquote span::before {
       content: "—"; }
 
@@ -254,3 +259,64 @@ header .button__open-menu {
   .section__persona .section__image--full-bleed li {
     letter-spacing: 1px;
     margin: 0 0 10px 0; }
+
+@media only screen and (max-width: 1112px) {
+  .main_content .section__header,
+  .main_content .section__content-paragraph {
+    width: 80%; }
+  .section__callout--list {
+    flex-wrap: wrap; }
+  .section__callout--list-item {
+    width: 40%; }
+  .section__content-blockquote {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .masthead .section__content {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    height: 100vh; }
+  .masthead .masthead__icon {
+    width: 100%;
+    margin: 0; }
+  .masthead h4 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%; }
+    .masthead h4 span {
+      margin-top: 10px; }
+  .masthead .arrow {
+    bottom: 20px; }
+  .main_content .section__header {
+    font-size: 24px;
+    line-height: 32px; }
+  .main_content .section__header,
+  .main_content .section__content-paragraph {
+    width: 100%; }
+  .section__callout h4 {
+    font-size: 24px;
+    line-height: 32px; }
+  .section__callout--list-item {
+    width: 100%; }
+  .section__content-blockquote {
+    width: 100%;
+    font-size: 18px;
+    line-height: 32px; }
+  .section__content-blockquote--small {
+    line-height: 32px;
+    font-size: 16px;
+    width: 100%; }
+  .section__persona .section__image--full-bleed .copy {
+    color: #000;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0 5% 20px 5%;
+    margin: 0 auto;
+    width: 75%; }
+  .section__content-image--small {
+    margin: 75px 0;
+    width: 100%; }
+  .float-right {
+    float: none; } }
