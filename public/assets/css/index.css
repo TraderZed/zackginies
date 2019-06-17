@@ -180,8 +180,9 @@ a {
     margin: 0 0 40px 0; }
     .nav__main li a {
       color: #FDE7FA; }
+    .nav__main li ul li {
+      font-size: 48px; }
     .nav__main li ul li a {
-      font-size: 48px;
       color: #1F091C; }
     .nav__main li.active {
       text-decoration: line-through; }
@@ -213,6 +214,17 @@ a {
   cursor: pointer; }
   .button__open-menu:focus {
     outline: 0; }
+
+@media only screen and (max-width: 768px) {
+  .button__open-menu,
+  .button__close-menu {
+    top: 20px;
+    right: 20px; }
+  .nav__main li {
+    font-size: 40px; }
+  .nav__main ul li ul li {
+    font-size: 40px;
+    padding-top: 10px; } }
 
 html,
 body {
@@ -311,6 +323,9 @@ header {
     text-align: center; } }
 
 @media only screen and (max-width: 768px) {
+  h1 span {
+    padding-top: 20px;
+    line-height: 24px; }
   .masthead {
     margin-bottom: -1px; }
     .masthead .masthead__header {

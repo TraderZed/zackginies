@@ -273,8 +273,12 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  .masthead {
+  .button__open-menu {
+    top: 20px;
+    right: 20px;
+  }
 
+  .masthead {
     .section__content {
       flex-direction: column;
       flex-wrap: nowrap;
@@ -318,6 +322,7 @@ header {
 
   .section__callout--list-item {
     width: 100%;
+    margin-top: 20px;
   }
 
   .section__content-blockquote {

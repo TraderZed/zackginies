@@ -121,6 +121,11 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  h1 span {
+    padding-top: 20px;
+    line-height: 24px;
+  }
+
   .masthead {
     margin-bottom: -1px;
 
