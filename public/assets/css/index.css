@@ -180,8 +180,11 @@ a {
     margin: 0 0 40px 0; }
     .nav__main li a {
       color: #FDE7FA; }
+    .nav__main li ul {
+      padding-top: 20px; }
     .nav__main li ul li {
-      font-size: 48px; }
+      font-size: 48px;
+      margin-bottom: 10px; }
     .nav__main li ul li a {
       color: #1F091C; }
     .nav__main li.active {
@@ -205,7 +208,10 @@ a {
   position: absolute;
   right: 40px;
   top: 40px;
-  background: transparent url(../images/icons/menu.svg) 0 0 no-repeat;
+  background: #ff007e;
+  mask-image: url(../images/icons/arrow_down_pink.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
   border: 0;
   padding: 0;
   height: 56px;

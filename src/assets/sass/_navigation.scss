@@ -40,8 +40,13 @@
       color: #FDE7FA;
     }
 
+    ul {
+      padding-top: 20px;
+    }
+
     ul li {
       font-size: 48px;
+      margin-bottom: 10px;
     }
 
     ul li a {
@@ -76,7 +81,10 @@
   position: absolute;
   right: 40px;
   top: 40px;
-  background: transparent url(../images/icons/menu.svg) 0 0 no-repeat;
+  background: $hotPink;
+  mask-image: url(../images/icons/arrow_down_pink.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
   border: 0;
   padding: 0;
   height: 56px;

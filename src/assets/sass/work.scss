@@ -3,52 +3,22 @@
 @import "_colors";
 @import "_typography";
 
-
 header {
   .button__open-menu {
-    background: #FF968D;
-    mask-image: url(../images/icons/menu_white.svg);
-    mask-repeat: no-repeat;
-    mask-position: center;
-  }
+    background: #9DFF00;
+  }  
 }
 
+
 .masthead {
-  background: #1F3A93 url(../images/backgrounds/jaggy_white.svg) 0 bottom repeat-x;
+  background: #48B9F7 url(../images/backgrounds/jaggy_white.svg) 0 bottom repeat-x;
 
-  .section__content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    height: 100vh;
-  }
-
-  .masthead__icon {
-    width: 20%;
-    margin: 0 5%;
-  }
-
-  h4 {
-    color: #FF968D;
-    text-align: left;
-    width: 70%;
-
-    span {
-      display: block;
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: normal;
-      color: #fff;
-    }
+  .masthead__header {
+    color: #E7F5FD;
   }
 
   .arrow {
-    position: relative;
-    background: #fff;
-    mask-image: url(../images/icons/arrow_down_pink.svg);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    width: 100%;
+    background: #9DFF00;
   }
 }
 
@@ -83,12 +53,6 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  &--last {
-    padding-bottom: 100px;
-    margin-bottom: 0;
-    background-image: none;
   }
 
   &:before {
