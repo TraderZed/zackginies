@@ -1,0 +1,73 @@
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{name: "description", content: "Zack Ginies is a Toronto based product and user experience designer. He is skilled at user research, testing and iterative design. He is also proficient in Sketch, Principle and InVision. In addition, he also has 10 years of front-end development experience."}
+
+    %title Visuals - Zack Ginies - Toronto Based Product and UX Designer
+    %link{rel: "icon", type: "image/png", media: "all", href: "public/assets/images/favicon.png"}
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/index.css"}
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/work.css"}
+    %script{async: "", src: "https://www.googletagmanager.com/gtag/js?id=UA-1039063-1"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1039063-1');
+
+  %body
+    %header
+      %button.button__open-menu Open Menu
+      %nav.nav__main
+        %button.button__close-menu Close Menu
+        %ul
+          %li
+            %a{href: "./"} About
+          %li
+            %a{href: "./calling.html"} Case Studies
+            %ul
+              %li
+                %a{href: "./calling.html"} Calling
+              %li
+                %a{href: "./snapple.html"} Project Snapple
+          %li.active
+            %a{href: "./visuals.html"} Visuals
+          %li
+            %a{href: "mailto:zack@zackginies.com"} Email Me
+    %section.masthead
+      .section__content
+        %h1.masthead__header Visuals
+        .arrow.animated.bounce
+
+    %main.main_content
+      %section.section
+        .section__content
+          %h3.section__header Illustration
+          %img.section__content-image{src: "public/assets/images/visuals/illustration.jpg"}
+
+      %section.section
+        .section__content
+          %h3.section__header Logo Exploration
+          %img.section__content-image{src: "public/assets/images/visuals/logos.jpg"}
+
+      %section.section
+        .section__content
+          %h3.section__header Ted × New Grads
+          .section__content__image-group
+            %img.section__content-image{src: "public/assets/images/visuals/ted_1.jpg"}
+            %img.section__content-image{src: "public/assets/images/visuals/ted_2.jpg"}
+          %p.section__content-paragraph In an effort to make networking easier and less awkward for new grads, I designed a system that would allow users to find TED Talks. To acheive this, users would select the event type and industry, and also their own personal interests allowing them to find a great conversation starter that would help them to break the ice and feel comfortable in an otherwise awkward situation.
+
+      %section.section
+        .section__content
+          %h3.section__header Form Redesign
+          %img.section__content-image{src: "public/assets/images/visuals/form_redesign.jpg"}
+
+      %section.section
+        .section__content
+          %h3.section__header Heuristic Evaluation & Redesign
+          %img.section__content-image--medium{src: "public/assets/images/visuals/heuristic.jpg"}
+
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+    %script{src: "public/assets/js/index.js"}

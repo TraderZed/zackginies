@@ -45,6 +45,9 @@ h6 {
   letter-spacing: 3px;
   text-transform: uppercase; }
 
+h2 {
+  font-family: "Montserrat", sans-serif; }
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
@@ -76,7 +79,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #ff007e; }
+  color: #fc4365; }
 
 @keyframes bounce {
   0%,
@@ -118,6 +121,9 @@ h6 {
   letter-spacing: 3px;
   text-transform: uppercase; }
 
+h2 {
+  font-family: "Montserrat", sans-serif; }
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
@@ -149,10 +155,10 @@ p {
 
 a {
   text-decoration: none;
-  color: #ff007e; }
+  color: #fc4365; }
 
 .nav__main {
-  background: #ff007e;
+  background: #fc4365;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +214,7 @@ a {
   position: absolute;
   right: 40px;
   top: 40px;
-  background: #ff007e;
+  background: #fc4365;
   mask-image: url(../images/icons/arrow_down_pink.svg);
   mask-repeat: no-repeat;
   mask-position: center;
@@ -245,7 +251,7 @@ header {
   height: 100px;
   z-index: 100; }
   header .button__open-menu {
-    background: #ff007e;
+    background: #fc4365;
     -webkit-mask-image: url(../images/icons/menu_white.svg);
     mask-image: url(../images/icons/menu_white.svg);
     -webkit-mask-repeat: no-repeat;
@@ -254,7 +260,8 @@ header {
     mask-position: center; }
 
 .masthead {
-  background: url(../images/backgrounds/jaggy.svg) 0 bottom repeat-x;
+  background: url(../images/backgrounds/jaggy.svg) 0 bottom repeat-x, url(../images/backgrounds/me.jpg) -250px bottom no-repeat;
+  background-size: auto, contain;
   position: relative;
   width: 90%;
   padding: 0 5% 50px 5%;
@@ -265,15 +272,17 @@ header {
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     height: 100vh;
-    width: 100%; }
+    width: 100%;
+    max-width: 1024px; }
   .masthead .masthead__header {
-    font-size: 142px;
+    margin-left: 250px;
+    font-size: 100px;
     letter-spacing: 4px;
     color: #000; }
   .masthead .arrow {
-    background: #ff007e;
+    background: #fc4365;
     -webkit-mask-image: url(../images/icons/arrow_down_pink.svg);
     mask-image: url(../images/icons/arrow_down_pink.svg);
     -webkit-mask-repeat: no-repeat;
@@ -317,14 +326,25 @@ header {
     line-height: 30px; }
   .info_block ul {
     padding: 0;
-    list-style: none; }
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
     .info_block ul li {
       padding: 0;
-      margin: 0 0 15px 0; }
+      margin: 0 2% 25px 2%;
+      width: 45%; }
   .info_block section {
     margin-bottom: 75px; }
 
 @media only screen and (max-width: 1112px) {
+  .masthead {
+    background: url(../images/backgrounds/jaggy.svg) 0 bottom repeat-x, none; }
+    .masthead .masthead__header {
+      margin-left: 0; }
+  .info_block ul li {
+    width: 95%; }
   h1 span {
     text-align: center; } }
 
@@ -344,4 +364,10 @@ header {
     width: 75%; }
     .info .info_block h2 {
       font-size: 16px;
-      width: 100%; } }
+      width: 100%; }
+    .info .info_block h3, .info .info_block h4 {
+      font-size: 24px;
+      line-height: 32px; }
+    .info .info_block h5 {
+      font-size: 16px;
+      line-height: 24px; } }
