@@ -203,9 +203,9 @@ header .button__open-menu {
     width: 100%; } }
 
 @media only screen and (max-width: 768px) {
-  .button__open-menu {
-    top: 20px;
-    right: 20px; }
+  .masthead .masthead__header {
+    font-size: 48px;
+    text-transform: uppercase; }
   .masthead .section__content {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -221,7 +221,7 @@ header .button__open-menu {
     .masthead h4 span {
       margin-top: 10px; }
   .masthead .arrow {
-    bottom: 20px; }
+    bottom: 90px; }
   .main_content .section__header {
     font-size: 24px;
     line-height: 32px; }

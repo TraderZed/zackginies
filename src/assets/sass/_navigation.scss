@@ -100,8 +100,9 @@
 @media only screen and (max-width: 768px) {
   .button__open-menu,
   .button__close-menu {
-    top: 20px;
-    right: 20px;
+    transform: scale(.6);
+    top: 5px;
+    right: 5px;
   }
 
   .nav__main li {
