@@ -167,14 +167,16 @@ a {
   font-weight: bold;
   height: 100vh;
   width: 100%;
-  transform: translateY(-100vh);
+  opacity: 0;
   z-index: 1;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  pointer-events: none;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
   .nav__main.open {
-    transform: translateY(0); }
+    opacity: 1;
+    pointer-events: all; }
   .nav__main ul {
     list-style: none;
     padding: 0;
@@ -312,7 +314,8 @@ header {
 
 .info {
   background: #292929;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .info_block {
   position: relative;
