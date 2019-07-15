@@ -75,8 +75,7 @@ p {
   line-height: 28px; }
 
 a {
-  text-decoration: none;
-  color: #fc4365; }
+  color: #FD99BB; }
 
 header .button__open-menu {
   background: #FF968D;
@@ -129,6 +128,9 @@ header .button__open-menu {
     max-width: 1024px; }
   .main_content .section__content-paragraph {
     width: 65%; }
+  .main_content a {
+    color: #B3003E;
+    text-decoration: none; }
 
 .section__callout {
   background: #1F3A93 url(../images/backgrounds/jaggy_white.svg) 0 bottom repeat-x;

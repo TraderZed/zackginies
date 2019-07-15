@@ -78,8 +78,7 @@ p {
   line-height: 28px; }
 
 a {
-  text-decoration: none;
-  color: #fc4365; }
+  color: #FD99BB; }
 
 @keyframes bounce {
   0%,
@@ -154,8 +153,7 @@ p {
   line-height: 28px; }
 
 a {
-  text-decoration: none;
-  color: #fc4365; }
+  color: #FD99BB; }
 
 .nav__main {
   background: #fc4365;
@@ -187,7 +185,8 @@ a {
     line-height: 100%;
     margin: 0 0 40px 0; }
     .nav__main li a {
-      color: #FDE7FA; }
+      color: #FDE7FA;
+      text-decoration: none; }
     .nav__main li ul {
       padding-top: 20px; }
     .nav__main li ul li {

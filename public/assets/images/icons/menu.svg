@@ -1,1 +1,11 @@
-<svg width="56" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M8 19h40a2.5 2.5 0 1 0 0-5H8a2.5 2.5 0 1 0 0 5zm0 23h40a2.5 2.5 0 1 0 0-5H8a2.5 2.5 0 1 0 0 5zm0-11.5h40a2.5 2.5 0 1 0 0-5H8a2.5 2.5 0 1 0 0 5z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,19 L48,19 C49.3807119,19 50.5,17.8807119 50.5,16.5 C50.5,15.1192881 49.3807119,14 48,14 L8,14 C6.61928813,14 5.5,15.1192881 5.5,16.5 C5.5,17.8807119 6.61928813,19 8,19 Z" id="Line-2" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M8,42 L48,42 C49.3807119,42 50.5,40.8807119 50.5,39.5 C50.5,38.1192881 49.3807119,37 48,37 L8,37 C6.61928813,37 5.5,38.1192881 5.5,39.5 C5.5,40.8807119 6.61928813,42 8,42 Z" id="Line-2" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M8,30.5 L48,30.5 C49.3807119,30.5 50.5,29.3807119 50.5,28 C50.5,26.6192881 49.3807119,25.5 48,25.5 L8,25.5 C6.61928813,25.5 5.5,26.6192881 5.5,28 C5.5,29.3807119 6.61928813,30.5 8,30.5 Z" id="Line-2" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

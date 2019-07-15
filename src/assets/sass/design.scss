@@ -44,19 +44,32 @@ header {
     width: 65%;
     margin: 0 auto;
   }
+
+  a {
+    color: #B3003E;
+    text-decoration: none;
+  }
 }
 
 .section__content__image-group {
+  overflow: hidden;
+  margin-bottom: 20px;
+
   .section__content-image {
     width: 50%;
     float: left;
   }
 }
 
-.section__content-image {
+.section__content-image,
+.section__content__video {
   display: block;
-  margin: 75px 0;
+  margin: 75px 0 25px;
   width: 100%;
+
+  video {
+    width: 100%;
+  }
 }
 
 .section__content-image--small {

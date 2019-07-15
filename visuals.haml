@@ -1,4 +1,5 @@
-%html
+!!!
+%html{xmlns: "http://www.w3.org/1999/xhtml", lang: "en"}
   %head
     %meta{charset: "utf-8"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
@@ -26,38 +27,27 @@
         %ul
           %li
             %a{href: "./", title: "About"} About
+          %li.active
+            %a{href: "./visuals.html", title: "Interactive Design"} Interactive Design
           %li
-            %a{href: "./calling.html", title: "Case Studies"} Case Studies
+            %a{href: "./calling.html", title: "UX Studies"} UX Studies
             %ul
               %li
                 %a{href: "./calling.html", title: "Calling"} Calling
               %li
                 %a{href: "./snapple.html", title: "Project Snapple"} Project Snapple
-          %li.active
-            %a{href: "./visuals.html", title: "Visual Design"} Visual Design
           %li
             %a{href: "mailto:zack@zackginies.com", title: "Email Me"} Email Me
     %section.masthead
       .section__content
-        %h1.masthead__header Visual Design
+        %h1.masthead__header Interactive Design
         .arrow.animated.bounce
 
     %main.main_content
       %section.section
         .section__content
-          %h3.section__header Calling
-          %p User Experience & Visual Design • Branding
-          %img.section__content-image{src: "public/assets/images/design/calling.jpg", alt: "An image of a website for the app Calling. The website contains a top navigation and large masthead image with an illustration of a heart."}
-          %img.section__content-image{src: "public/assets/images/visuals/logos.jpg", alt: "Four different version of the Calling logo is displayed in both black and grey. The logos show looping L's and L's that are shaped like a heart."}
-          %p.section__content-paragraph In an effort to make volunteering easier, I designed a system that would allow volunteers to be easily matched with organizations they would identify with. Calling facilitates the entire process, from discovery, all the way to application and on-boarding.
-          %p.section__content-paragraph
-            %br
-            %a{href: "./calling.html"} Read the Calling case study
-
-      %section.section
-        .section__content
           %h3.section__header Empire
-          %p User Experience & Visual Design • Copywriting • Branding
+          %p User Experience • UI Design • Branding
           %img.section__content-image{src: "public/assets/images/design/empire.jpg", alt: "A large image of the homepage for Empire Pies. The website shows a large pie in the background with the Empire logo on top."}
 
           .section__content__image-group
@@ -66,6 +56,38 @@
 
           %img.section__content-image{src: "public/assets/images/visuals/empire_logos.jpg", alt: "A series of logos for Empire that show a variety of block text with a black outline."}
           %p.section__content-paragraph In a previous life, believe it or not, I made pies. Empire was the name of my business, not only named after the apple, but also named after my hopes of being the ultimate grand supreme of the Toronto pie scene (yes, there’s a Toronto pie scene). Ultimately, Empire never took off, but it left us with a beautiful interface, rich with tasty interactions and imagery.
+
+      %section.section
+        .section__content
+          %h3.section__header Format Stores
+          %p User Experience • UI Development
+
+          .section__content__video
+            <video playsinline autoplay loop muted>
+              <source src="public/assets/images/design/format-store.mp4" type="video/mp4" />
+              <source src="public/assets/images/design/format-store.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+
+          .section__content__image-group
+            %img.section__content-image{src: "public/assets/images/design/format-store-1.jpg", alt: "The editor for the product page. The user can edit the type of product, images and information about the product."}
+            %img.section__content-image{src: "public/assets/images/design/format-store-2.jpg", alt: "A listing view of all products in the store. The user can organize and sort their products."}
+
+          %p.section__content-paragraph In an effort to centralize all the needs of Format users, a small team - 2 developers, 1 designer and 1 product manager - planned, designed and built a e-commerce platform from the ground up that allowed Format users to sell their products online. Working closely with design, I was responsible for building all the front-end components, as well as integration into Format Themes. I was also a key collaborator in conceptualizing interactions, flows and user stories.
+
+          %p.section__content-paragraph
+            %br
+            %a{href: "https://www.format.com/features/store", target: "_blank", title: "Find out more about Format Stores"} Find out more about Format Stores
+      %section.section
+        .section__content
+          %h3.section__header Calling
+          %p User Experience • UI Design • Branding
+          %img.section__content-image{src: "public/assets/images/design/calling.jpg", alt: "An image of a website for the app Calling. The website contains a top navigation and large masthead image with an illustration of a heart."}
+          %img.section__content-image{src: "public/assets/images/visuals/calling_logos.jpg", alt: "Four different version of the Calling logo is displayed in both black and grey. The logos show looping L's and L's that are shaped like a heart."}
+          %p.section__content-paragraph In an effort to make volunteering easier, I designed a system that would allow volunteers to be easily matched with organizations they would identify with. Calling facilitates the entire process, from discovery, all the way to application and on-boarding.
+          %p.section__content-paragraph
+            %br
+            %a{href: "./calling.html", title: "Read the Calling case study"} Read the Calling case study
 
       %section.section
         .section__content
