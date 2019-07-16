@@ -215,7 +215,7 @@ header .button__open-menu {
 
 @media only screen and (max-width: 768px) {
   .masthead .masthead__header {
-    font-size: 48px;
+    font-size: 36px;
     text-transform: uppercase; }
   .masthead .section__content {
     flex-direction: column;
