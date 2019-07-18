@@ -2,6 +2,7 @@
 @import "_mixins";
 @import "_colors";
 @import "_typography";
+@import "_navigation";
 
 html,
 body {
@@ -11,38 +12,83 @@ body {
   line-height: 24px;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+
+  .button__open-menu {
+    background: $hotPink;
+    mask-image: url(../images/icons/menu_white.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+}
+
+
 .masthead {
+  background: url(../images/backgrounds/jaggy.svg) 0 bottom repeat-x, url(../images/backgrounds/me.jpg) -250px bottom no-repeat;
+  background-size: auto, contain;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 90%;
-  height: 100vh;
-  margin-bottom: 50px;
-  padding: 0 5%;
+  padding: 0 5% 20px 5%;
   text-align: center;
-  h1 {
-    font-size: 142px;
+
+  .section__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    max-height: 800px;
+    max-width: 1024px;
+  }
+
+  .masthead__header {
+    margin-left: 250px;
+    font-size: 100px;
     letter-spacing: 4px;
     color: #000;
   }
 
   .arrow {
+    background: $hotPink;
+    mask-image: url(../images/icons/arrow_down_pink.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
     position: absolute;
     bottom: 50px;
-    width: 40px;
-    height: 40px;
-    background: url(../images/icons/arrow_down_pink.svg) 0 0 no-repeat;
-    background-size: contain;
+    width: 56px;
+    height: 56px;
     animation: bounce 2s infinite;
   }
 }
 
 /* INFO ------------------------------------------------------------*/
+
+.section {
+  position: relative;
+}
+
+.section__content {
+    position: relative;
+    padding: 40px 5% 20px 5%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}
+
+
 .info {
-  background: $darkGrey url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
+  background: $darkGrey;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .info_block {
   position: relative;
@@ -61,10 +107,16 @@ body {
 
   ul {
     padding: 0;
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
     li {
       padding: 0;
-      margin: 0 0 15px 0;
+      margin: 0 2% 25px 2%;
+      width: 45%;
     }
   }
 
@@ -74,17 +126,40 @@ body {
 }
 
 @media only screen and (max-width: 1112px) {
+
+  .masthead {
+    background: url(../images/backgrounds/jaggy.svg) 0 bottom repeat-x, none;
+    .masthead__header {
+      margin-left: 0;
+    }
+  }
+
+  .info_block {
+    ul li {
+      width: 95%;
+    }
+  }
+
   h1 span {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  h1 span {
+    padding-top: 20px;
+    line-height: 24px;
+  }
+
   .masthead {
     margin-bottom: -1px;
 
-    h1 {
+    .masthead__header {
       font-size: 29px;
+    }
+
+    .section__content {
+      max-height: 100vh;
     }
 
     .arrow {
@@ -93,10 +168,6 @@ body {
     }
   }
   .info {
-    background: $darkGrey url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
-    background-size: 20px;
-    margin-top: -1px;
-
     .info_block {
       color: #fff;
       width: 75%;
@@ -104,6 +175,16 @@ body {
       h2 {
         font-size: 16px;
         width: 100%;
+      }
+
+      h3, h4 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      h5 {
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }

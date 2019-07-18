@@ -1,0 +1,138 @@
+!!!
+%html{xmlns: "http://www.w3.org/1999/xhtml", lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{name: "description", content: "Zack Ginies is a Toronto based product and user experience designer. He is skilled at user research, testing and iterative design. He is also proficient in Sketch, Principle and InVision. In addition, he also has 10 years of front-end development experience."}
+
+    %title Case Studies - Zack Ginies - Toronto Based Product and UX Designer
+    %link{rel: "icon", type: "image/png", media: "all", href: "public/assets/images/favicon.png"}
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/index.css"}
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/case_studies.css"}
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/snapple.css"}
+    %script{async: "", src: "https://www.googletagmanager.com/gtag/js?id=UA-1039063-1"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1039063-1');
+
+  %body
+    %header
+      %button.button__open-menu Open Menu
+      %nav.nav__main
+        %button.button__close-menu Close Menu
+        %ul
+          %li
+            %a{href: "./", title: "About"} About
+          %li
+            %a{href: "./visuals.html", title: "Interactive Work"} Interactive Work
+          %li
+            %a{href: "./calling.html", title: "UX Studies"} UX Studies
+            %ul
+              %li
+                %a{href: "./calling.html", title: "Calling"} Calling
+              %li.active
+                %a{href: "./snapple.html", title: "Project Snapple"} Project Snapple
+          %li
+            %a{href: "mailto:zack@zackginies.com", title: "Email Me"} Email Me
+    %section.masthead
+      .section__content
+        %h4
+          Bridging the gap between design and development
+          %span Project Snapple // IA, Project Management, Web Development
+        .arrow.animated.bounce
+
+    %main.main_content
+      %section.section
+        .section__content
+          %h3.section__header Introduction
+          %p.section__content-paragraph As companies begin to expand and grow, a whole new set of challenges present themselves. I began at Format when the company had roughly 15 employees - we moved quickly and were masters of our product. As our team began to grow and we began to develop our product even further, a common question started presenting itself when designing or building new features:
+          %blockquote.section__content-blockquote “Anyone know if we have a thing that does a thing that looks like this thing and acts like this thing over here?”
+          %p.section__content-paragraph Often times, the answer was yes. Even more often than that, however, the answer was “I don’t know.” In addition, being able to find “the thing” within the app became increasingly more difficult.
+          %p.section__content-paragraph Moving into my new role as UX developer, I saw this as a great opportunity to establish a style guide and component directory that could be used by both design and development to help alleviate the issue.
+
+      %section.section
+        .section__content
+          %h3.section__header Balancing Act
+          %p.section__content-paragraph I began the process by talking with both the design and development teams to truly uncover their needs. It became clear that each team had very different and very specific priorities. The design team required the following: a single source of truth, visibility of all states, and an elegant, beautiful interface. The development team required the following: code snippets, compatibility with React, and the desire for openness and collaboration. Working to balance the needs of the design team, as well as the development team, created an interesting set of constraints to work within.
+        .section__callout
+          .section__content
+            %h4 Design Requirements
+            %ul.section__callout--list
+              %li.section__callout--list-item.item-one
+                %h6 Single Source of Truth
+                %p Components are exactly how they appear in the app. Change it once, change it everywhere.
+              %li.section__callout--list-item.item-two
+                %h6 Visibility of All States
+                %p Elements must have all states visible and in context to each other.
+              %li.section__callout--list-item.item-three
+                %h6 Elegant and Beautiful
+                %p Interface should be visually appealing and easy to use.
+
+            %h4 Development Requirements
+            %ul.section__callout--list
+              %li.section__callout--list-item.item-one
+                %h6 Code Snippets
+                %p Components must have code snippets that allow for simple integration.
+              %li.section__callout--list-item.item-two
+                %h6 Compatible with React
+                %p Must work with our existing Javascript framework.
+              %li.section__callout--list-item.item-three
+                %h6 Open and Collaborative
+                %p Anyone should be able to add, edit or document components.
+
+      %section.section
+        .section__content
+          %p.section__content-paragraph Given all the information, I felt confident I would be able to provide a solution that satisfied both team’s needs. The only issue that could make this challenging would be time and resources. Our team was still relatively small, and dedicating an entire resource to just building out a style guide and component directory was a hard sell. I needed to figure out a way that could meet the needs of everyone, including the business requirements.
+          %p.section__content-paragraph It became clear that a fully custom solution would be off the table - this was pretty disheartening. As much as there are really great frameworks out there, but I was really excited to build something from the ground up that could really meet the needs of both teams and elevate our technical prowess.
+          %p.section__content-paragraph Moving forward, I began to look at different frameworks that could work within our existing code base. Our development team had previous experience with StorybookJS, and it seemed to fit with their remaining requirements. Fortunately, most of design’s requirements would also be met with using this framework, however StorybookJS does leave a lot to be desired in terms of design. I decided that our MVP would be a functional implementation of StorybookJS that would allow components to be added and documented.
+
+          %img.section__content-image{src: "public/assets/images/case_studies/snapple/monitor_1.jpg"}
+
+      %section.section
+        .section__content
+          %h3.section__header Disorganized Chaos
+          %p.section__content-paragraph Once our MVP had been implemented, I began prioritizing which items should be moved into our style guide first. I spoke with many members of the design team, including the design director, so find out exactly what they needed. The team agreed that buttons and form elements would be the lowest hanging fruit we could grab.
+          %p.section__content-paragraph As the style guide began to fill out, more and more contributors were involved and the development team started using the style guide as a sandbox for developing new components, which made the organization very chaotic, and made it very difficult for the design team to use it effectively.
+          %p.section__content-paragraph It became very clear that there needed to be much more established guidelines and architecture added for the styleguide to be a true success.
+          %p.section__content-paragraph To gain an idea of organization, I broke out components into types and categories and used simple card sorting to establish a clear architecture of all elements. Through this exercise, well defined categories began to emerge. The categories were UI Elements, Form Elements, and Notification Elements.
+
+        .section__callout
+          .section__content
+            %h4 Component Categories
+            %ul.section__callout--list
+              %li.section__callout--list-item.item-one
+                %h6 UI Elements
+                %p Buttons, pills, loaders, progress bars, and modals.
+              %li.section__callout--list-item.item-two
+                %h6 Form Elements
+                %p Text inputs, select boxes, and checkboxes.
+              %li.section__callout--list-item.item-three
+                %h6 Notification Elements
+                %p Alert bars, toasts, and callouts
+        .section__content
+          %img.section__content-image--small.float-right{src: "public/assets/images/case_studies/snapple/sorted.jpg"}
+          %p.section__content-paragraph With clear organization laid out, I also needed to make sure that the development team could still use the platform to build out components, so in addition to elemental sections, I created a dedicated sandbox area. This would allow them to not only build out rapid prototypes, but also create fully interactive components before integrating them into the app.
+          %p.section__content-paragraph As Snapple became a widely adopted tool, we began to see many efficiencies in our processes. Development time had decreased and it allowed the team to effectively build, test, and deploy fully interactive components separate from our app. For the design team, they were able to get a very quick and detailed snapshot of which components existed in our app, all their variations and how and when to use them.
+
+      %section.section
+        .section__content
+          %h3.section__header Next Steps
+
+          %p.section__content-paragraph As it stands, the current layout and design for Snapple is incredibly utilitarian - it gets the job done. Moving forward, the design would be revamped and cleaned up with much more personality and branding injected.
+          %p.section__content-paragraph Working with both teams and managing both expectations was an incredible experience to have. It was completely rewarding to design and build a tool that allowed our team to become more efficient and work collaboratively on an on-going basis.
+
+        .section__callout.section__callout--last
+          .section__content
+            %h4 Key Project Learnings
+            %ul.section__callout--list
+              %li.section__callout--list-item
+                %h6 Managing Trade-Offs Can Be Difficult, but sometimes necessary.
+              %li.section__callout--list-item
+                %h6 Balancing the needs of all stakeholders is an art form.
+              %li.section__callout--list-item
+                %h6 Building Internal Tools can have massive gains to productivity.
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+    %script{src: "public/assets/js/index.js"}

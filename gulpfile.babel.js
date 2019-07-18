@@ -32,7 +32,13 @@ gulp.task("styles", () => {
 gulp.task("images", () => {
   return gulp
     .src("src/assets/images/**")
-    .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ], {
+      verbose: true
+    }))
     .pipe(gulp.dest("./public/assets/images/"));
 });
 

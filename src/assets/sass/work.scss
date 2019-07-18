@@ -1,0 +1,279 @@
+@import "./normalize.css";
+@import "_mixins";
+@import "_colors";
+@import "_typography";
+
+header {
+  .button__open-menu {
+    background: #9DFF00;
+  }
+}
+
+
+.masthead {
+  background: #48B9F7 url(../images/backgrounds/jaggy_white.svg) 0 bottom repeat-x;
+
+  .masthead__header {
+    margin-left: 0;
+    color: #E7F5FD;
+  }
+
+  .arrow {
+    background: #9DFF00;
+  }
+}
+
+
+.main_content {
+  background: #fff;
+
+  .section__header {
+    text-align: center;
+  }
+
+  .section__content {
+    color: #212121;
+    text-align: center;
+    width: 90%;
+    max-width: 1024px;
+  }
+
+  .section__content-paragraph {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+.section__content__image-group {
+  .section__content-image {
+    width: 50%;
+    float: left;
+  }
+}
+
+.section__content-image {
+  display: block;
+  margin: 75px 0;
+  width: 100%;
+}
+
+.section__content-image--small {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 30%;
+}
+
+.section__content-image--medium {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 60%;
+}
+
+.section__content-blockquote {
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: $Montserrat;
+  width: 70%;
+  margin: 75px auto;
+
+  span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    padding-top: 15px;
+
+    &::before {
+      content: "—";
+    }
+  }
+}
+
+.section__content-blockquote--small {
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-family: $Montserrat;
+  width: 70%;
+  margin: 25px auto 75px auto;
+}
+
+.section__visual-identity {
+  .section__callout {
+    overflow: hidden;
+  }
+
+  .section__callout ul {
+    float: left;
+    color: #E2E5F1;
+    font-family: $Montserrat;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    margin: 0 0 75px 0;
+    padding: 0;
+    width: 50%;
+
+    &:nth-child(odd) {
+      text-decoration: line-through;
+    }
+  }
+
+  .section__callout ul li {
+    margin-bottom: 15px;
+  }
+}
+
+.float-right {
+  float: right;
+}
+
+.section__persona {
+  .section__image--full-bleed {
+    position: relative;
+
+    .copy {
+      color: #fff;
+      left: 63%;
+      top: 75px;
+      position: absolute;
+    }
+
+    h4 {
+      line-height: 32px;
+
+      span {
+        display: block;
+        font-size: 16px;
+      }
+    }
+
+    ul {
+      font-size: 16px;
+      font-weight: bold;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      letter-spacing: 1px;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1112px) {
+  .main_content .section__content-paragraph {
+    width: 80%;
+  }
+
+  .section__callout--list {
+    flex-wrap: wrap;
+  }
+
+  .section__callout--list-item {
+    width: 40%;
+  }
+
+  .section__content-blockquote {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .masthead {
+    .masthead__header {
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+
+    .section__content {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .masthead__icon {
+      width: 100%;
+      margin: 0;
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: 32px;
+      width: 100%;
+
+      span {
+        margin-top: 10px;
+      }
+    }
+
+    .arrow {
+      bottom: 90px;
+    }
+  }
+  .main_content .section__header {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .main_content .section__header,
+  .main_content .section__content-paragraph {
+    width: 100%;
+  }
+
+  .section__callout h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .section__callout--list-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .section__content-blockquote {
+    width: 100%;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .section__content-blockquote--small {
+    line-height: 32px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .section__persona .section__image--full-bleed .copy {
+    color: #000;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0 5% 20px 5%;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .section__content__image-group {
+    .section__content-image {
+      width: 100%;
+      float: none;
+    }
+  }
+
+  .section__content-image--small,
+  .section__content-image--medium {
+    margin: 75px 0;
+    width: 100%;
+  }
+
+  .float-right {
+    float: none;
+  }
+}

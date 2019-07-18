@@ -1,0 +1,118 @@
+@import "./normalize.css";
+@import "_mixins";
+@import "_colors";
+@import "_typography";
+
+.nav__main {
+  background: $hotPink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  font-family: $Montserrat;
+  font-weight: bold;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  li {
+    font-size: 60px;
+    line-height: 100%;
+    margin: 0 0 40px 0;
+
+    a {
+      color: #FDE7FA;
+      text-decoration: none;
+    }
+
+    ul {
+      padding-top: 20px;
+    }
+
+    ul li {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    ul li a {
+      color: #1F091C;
+    }
+
+    &.active {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.button__close-menu {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  background: transparent url(../images/icons/close.svg) 0 0 no-repeat;
+  border: 0;
+  padding: 0;
+  height: 56px;
+  width: 56px;
+  text-indent: -99999px;
+  cursor: pointer;
+
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.button__open-menu {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  background: $hotPink;
+  mask-image: url(../images/icons/arrow_down_pink.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  border: 0;
+  padding: 0;
+  height: 56px;
+  width: 56px;
+  text-indent: -99999px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button__open-menu,
+  .button__close-menu {
+    transform: scale(.6);
+    top: 5px;
+    right: 5px;
+  }
+
+  .nav__main li {
+    font-size: 40px;
+  }
+
+  .nav__main ul li ul li {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+}

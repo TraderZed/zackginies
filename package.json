@@ -11,13 +11,14 @@
   "devDependencies": {
     "babel-core": "latest",
     "babel-preset-env": "^1.7.0",
-    "gulp": "latest",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "latest",
     "gulp-imagemin": "latest",
     "gulp-sass": "latest",
     "gulp-terser": "latest"
   },
   "dependencies": {
-    "gulp-haml": "latest"
+    "gulp-haml": "latest",
+    "jquery": "^3.4.1"
   }
 }
