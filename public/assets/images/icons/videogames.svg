@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-189.000000, -2042.000000)" id="Group-2" stroke="#FFFFFF">
+            <g transform="translate(191.000000, 2044.000000)">
+                <circle id="Oval" stroke-width="4" cx="28" cy="28" r="28"></circle>
+                <path d="M36.7678793,30.6139974 C40.130436,30.3475526 43.0783963,29.2934413 46.3242575,28.0069674 C50.3817231,26.3988199 51.9862336,24.8010215 54.8576254,23.0021459" id="Shape" stroke-width="4" transform="translate(45.812752, 26.808072) rotate(-1.000000) translate(-45.812752, -26.808072) "></path>
+                <path d="M1.76787931,30.6139974 C5.130436,30.3475526 8.07839634,29.2934413 11.3242575,28.0069674 C15.3817231,26.3988199 16.9862336,24.8010215 19.8576254,23.0021459" id="Shape" stroke-width="4" transform="translate(10.812752, 26.808072) scale(-1, 1) rotate(-1.000000) translate(-10.812752, -26.808072) "></path>
+                <circle id="Oval" stroke-width="3" cx="28" cy="31.1155051" r="7.61550512"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
