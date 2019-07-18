@@ -80,35 +80,6 @@ body {
 .section .arrow {
   background: #FFDA00; }
 
-.header__masthead {
-  color: #fff;
-  text-align: center; }
-
 /* MAIN CONTENT ------------------------------------------------------------*/
 .section__callout {
   background-color: #D21F2B; }
-  .section__callout .h4, .section__callout .h6, .section__callout p {
-    color: #fff; }
-
-@media only screen and (max-width: 1112px) {
-  .main .section__content-paragraph,
-  .main .section__content-heading {
-    width: 80%; } }
-
-@media only screen and (max-width: 768px) {
-  .header__masthead {
-    font-size: 42px;
-    line-height: 52px; }
-    .header__masthead .header__subtitle {
-      line-height: 2em;
-      padding-top: 20px; }
-  .main {
-    padding-top: 20px; }
-    .main .h3 {
-      font-size: 32px;
-      line-height: 40px; }
-    .main .section__content {
-      width: 75%; }
-    .main .section__content-paragraph,
-    .main .section__content-heading {
-      width: auto; } }

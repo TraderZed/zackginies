@@ -47,10 +47,16 @@ body {
 }
 
 .section__content {
-    margin: 0 auto;
-    max-width: 1024px;
-    position: relative;
-    padding: 40px 5%;
+  margin: 0 auto;
+  max-width: 1024px;
+  position: relative;
+  padding: 40px 5%;
+
+  &--full-bleed {
+    max-width: 100vw;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .arrow {
@@ -89,6 +95,10 @@ body {
       height: 50px;
       width: 50px;
       margin: 0 auto 20px auto;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
     }
 
     .list__list-item-title {
@@ -203,7 +213,8 @@ body {
     width: 100%;
   }
 
-  .section__content-blockquote {
+  .section__content-blockquote,
+  .section__content-blockquote--small {
     width: 100%;
   }
 

@@ -7,6 +7,11 @@
   }
 }
 
+.header__masthead {
+  color: #fff;
+  text-align: center;
+}
+
 .main {
   background: #fff;
   color: $darkGrey;
@@ -20,6 +25,7 @@
 
 .section__callout {
   background: url(../images/backgrounds/jaggy_white.svg) 0 bottom repeat-x;
+  color: #fff;
   margin: 40px 0;
   padding-bottom: 40px;
   position: relative;
@@ -48,4 +54,59 @@
 .section__content-paragraph,
 .section__content-heading {
   width: 65%;
+}
+
+
+@media only screen and (max-width: 1112px) {
+  .main .section__content-paragraph,
+  .main .section__content-heading {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__masthead {
+    font-size: 42px;
+    line-height: 52px;
+
+    .header__subtitle {
+      line-height: 2em;
+      padding-top: 20px;
+    }
+  }
+
+  .main {
+    padding-top: 20px;
+
+    .h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .section__content {
+      width: 75%;
+
+      &--full-bleed {
+        width: 100%;
+
+        .copy {
+          color: $darkGrey;
+          position: relative;
+          left: 0;
+          width: 75%;
+          margin: 0 auto 75px auto;
+          padding: 0 5%;
+
+          .h4 {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    .section__content-paragraph,
+    .section__content-heading {
+      width: auto;
+    }
+  }
 }

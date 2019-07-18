@@ -74,6 +74,10 @@ a {
 .section__masthead {
   background: url(../images/backgrounds/jaggy_white.svg) 0 bottom repeat-x; }
 
+.header__masthead {
+  color: #fff;
+  text-align: center; }
+
 .main {
   background: #fff;
   color: #292929;
@@ -84,6 +88,7 @@ a {
 
 .section__callout {
   background: url(../images/backgrounds/jaggy_white.svg) 0 bottom repeat-x;
+  color: #fff;
   margin: 40px 0;
   padding-bottom: 40px;
   position: relative;
@@ -107,3 +112,37 @@ a {
 .section__content-paragraph,
 .section__content-heading {
   width: 65%; }
+
+@media only screen and (max-width: 1112px) {
+  .main .section__content-paragraph,
+  .main .section__content-heading {
+    width: 80%; } }
+
+@media only screen and (max-width: 768px) {
+  .header__masthead {
+    font-size: 42px;
+    line-height: 52px; }
+    .header__masthead .header__subtitle {
+      line-height: 2em;
+      padding-top: 20px; }
+  .main {
+    padding-top: 20px; }
+    .main .h3 {
+      font-size: 32px;
+      line-height: 40px; }
+    .main .section__content {
+      width: 75%; }
+      .main .section__content--full-bleed {
+        width: 100%; }
+        .main .section__content--full-bleed .copy {
+          color: #292929;
+          position: relative;
+          left: 0;
+          width: 75%;
+          margin: 0 auto 75px auto;
+          padding: 0 5%; }
+          .main .section__content--full-bleed .copy .h4 {
+            margin-top: 0; }
+    .main .section__content-paragraph,
+    .main .section__content-heading {
+      width: auto; } }
