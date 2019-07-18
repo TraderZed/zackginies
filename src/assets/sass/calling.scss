@@ -1,0 +1,88 @@
+@import "_colors";
+@import "_typography";
+
+$salmon: #FF968D;
+
+body {
+  background: #1F3A93;
+}
+
+.header {
+  .button__open-menu {
+    background: $salmon;
+  }
+}
+
+.section {
+  .arrow {
+    background: $salmon;
+  }
+}
+
+/* MAIN CONTENT ------------------------------------------------------------*/
+
+.section__callout {
+  background-color: #1F3A93;
+}
+
+.list__list-item {
+  &.heart {
+    .list__list-item-icon {
+      -webkit-mask-image: url(../images/icons/heart.svg);
+      mask-image: url(../images/icons/heart.svg);
+    }
+  }
+  &.dumbbell {
+    .list__list-item-icon {
+      -webkit-mask-image: url(../images/icons/dumbbell.svg);
+      mask-image: url(../images/icons/dumbbell.svg);
+    }
+  }
+  &.dnd {
+    .list__list-item-icon {
+      -webkit-mask-image: url(../images/icons/dnd.svg);
+      mask-image: url(../images/icons/dnd.svg);
+    }
+  }
+  &.community {
+    .list__list-item-icon {
+      -webkit-mask-image: url(../images/icons/community.svg);
+      mask-image: url(../images/icons/community.svg);
+    }
+  }
+}
+
+.list__list-item-icon {
+  background-color: $salmon;
+}
+
+.section__content--full-bleed {
+  .copy {
+    color: #fff;
+    left: 63%;
+    top: 75px;
+    position: absolute;
+  }
+
+  h4 {
+    line-height: 32px;
+
+    span {
+      display: block;
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+  }
+}

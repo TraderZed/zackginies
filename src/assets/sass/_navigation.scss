@@ -1,7 +1,4 @@
-@import "./normalize.css";
-@import "_mixins";
 @import "_colors";
-@import "_typography";
 
 .nav__main {
   background: $hotPink;
@@ -12,7 +9,8 @@
   font-family: $Montserrat;
   font-weight: bold;
   height: 100vh;
-  width: 100%;
+  width: 90%;
+  padding: 0 5%;
   opacity: 0;
   z-index: 1;
   pointer-events: none;
@@ -84,8 +82,11 @@
   right: 40px;
   top: 40px;
   background: $hotPink;
-  mask-image: url(../images/icons/arrow_down_pink.svg);
+  -webkit-mask-image: url(../images/icons/menu_white.svg);
+  mask-image: url(../images/icons/menu_white.svg);
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-position: center;
   mask-position: center;
   border: 0;
   padding: 0;

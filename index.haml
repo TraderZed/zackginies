@@ -5,9 +5,13 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %meta{name: "description", content: "Zack Ginies is a Toronto based product and user experience designer. He is skilled at user research, testing and iterative design. He is also proficient in Sketch, Principle and InVision. In addition, he also has 10 years of front-end development experience."}
 
-    %title Zack Ginies - Toronto Based Product and UX Designer
+    %title Zack Ginies - Toronto Based Technical Interaction Designer
+
     %link{rel: "icon", type: "image/png", media: "all", href: "public/assets/images/favicon.png"}
+
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/global.css"}
     %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/index.css"}
+
     %script{async: "", src: "https://www.googletagmanager.com/gtag/js?id=UA-1039063-1"}
     :javascript
       window.dataLayer = window.dataLayer || [];
@@ -16,7 +20,7 @@
       gtag('config', 'UA-1039063-1');
 
   %body
-    %header
+    %header.header
       %button.button__open-menu Open Menu
       %nav.nav__main
         %button.button__close-menu Close Menu
@@ -34,49 +38,60 @@
                 %a{href: "./snapple.html", title: "Project Snapple"} Project Snapple
           %li
             %a{href: "mailto:zack@zackginies.com", title: "Email Me"} Email Me
-    %section.masthead
+
+    %section.section.section__masthead
       .section__content
-        %h1.masthead__header
+        %h1.h1.header__masthead
           Hi, I'm Zack!
-          %span and I'm a technical interaction designer
+          %span.header__subtitle and I'm a technical interaction designer
         .arrow.animated.bounce
-    %section.info
-      .info_block
-        %h3 I'm kind of new here, but not really.
-        %p After 10 years working as a UX developer on world class products and with global clients, I've made the transition into a role focused primarily on product, UX and interaction design. Don't worry, writing code and building beautiful interfaces still makes me feel like a magnificent hybrid of <a href="http://www.theresacaputo.com/" target="_blank" title="Theresa Caputo">Theresa Caputo's hair</a> and <a href="https://en.wikipedia.org/wiki/Iris_Kyle" target="_blank" title="Iris Kyle">Iris Kyle</a>.
-        %p Over the span of my 10+ year career, I’ve had the pleasure of working with some major brands like Google, Starbucks, Stella Artois, Honda, KFC, and Bell, and also with some incredible local Toronto brands like The Black Hoof and Bar Isabel.
-        %p Before making this transition, I was working with the fine folks over at <a href="http://www.format.com/" target="_blank" title="Format">Format.com</a>, and before that, I was building epic sh!t at <a href="http://teehanlax.com/" tite="Teehan+Lax" target="_blank">Teehan+Lax</a>.
-        %p I'm also, like, totally hireable right now, so feel free to <a href="mailto:zack@zackginies.com" title="Email me!">slide into those DMs</a>. But before you do, you should know that I excel on teams that value data, technology, humanity, empathy and diversity.
 
-      .info_block
-        %h3 Some things I'm really good at
-        %ul
-          %li User research and testing
-          %li Information architecture and wireframing
-          %li Fully interactive prototyping using Sketch, InVision and Principle
-          %li Responsive, scalable and iterative UI design
-          %li Mobile and app design
-          %li Semantic and standards based HTML
-          %li CSS, Sass and LESS
-          %li Reusable ES6, React and jQuery
-          %li Cross-browser testing and support
+    %main.main
+      %section.section.section__info
+        .section__content
+          %h3.h3 I'm kind of new here, but not really.
+          %p After 10 years working as a UX developer on world class products and with global clients, I've made the transition into a role focused primarily on product, UX and interaction design. Don't worry, writing code and building beautiful interfaces still makes me feel like a magnificent hybrid of <a href="http://www.theresacaputo.com/" target="_blank" title="Theresa Caputo">Theresa Caputo's hair</a> and <a href="https://en.wikipedia.org/wiki/Iris_Kyle" target="_blank" title="Iris Kyle">Iris Kyle</a>.
+          %p Before making this transition, I was working with the fine folks over at <a href="http://www.format.com/" target="_blank" title="Format">Format.com</a>, and before that, I was building epic sh!t at <a href="http://teehanlax.com/" tite="Teehan+Lax" target="_blank">Teehan+Lax</a>.
+          %p Over the span of my 10+ year career, I’ve had the pleasure of working with some major brands like Google, Starbucks, Stella Artois, Honda, KFC, and Bell, and also with some incredible local Toronto brands like The Black Hoof and Bar Isabel.
+          %p I'm also, like, totally hireable right now, so feel free to <a href="mailto:zack@zackginies.com" title="Email me!">slide into those DMs</a>. But before you do, you should know that I excel on teams that value data, technology, humanity, empathy and diversity.
 
-      .info_block
-        %h5 And, of course, everything else
-        %ul
-          %li Pokémon
-          %li Livestreaming on <a href="http://twitch.tv/traderzed" target="_blank" title="TraderZed on Twitch">Twitch</a>
-          %li Customizing fightsticks
-          %li Dark Souls
-          %li
-            <a href="https://traderzed.format.com/" target="_blank" title="TraderZed on Format">Photography</a>
-          %li Fitness and exercise
-          %li Horror movies
-          %li Godzilla
+        .section__content
+          %h3.h3 Some things I'm really good at
 
-      .info_block
-        %h3 Still with me? Awesome!
-        %p
-          I'd love to tell you all about my process, so feel free to <a href="mailto:zack@zackginies.com" title="Email me!">email me</a> or let's connect on <a href="https://www.linkedin.com/in/zack-ginies/" target="_blank" title="LinkedIn">LinkedIn</a>.
+          %ul.list.list--icons
+            %li.list__list-item.heart
+              .list__list-item-icon
+              %h6.h6.list__list-item-title User Experience
+              %p User research & testing, journeys, IA, wireframes, prototypes and flows.
+            %li.list__list-item.design
+              .list__list-item-icon
+              %h6.h6.list__list-item-title UI Design
+              %p Interactions, accessibility, responsive layouts and interfaces.
+            %li.list__list-item.development
+              .list__list-item-icon
+              %h6.h6.list__list-item-title Development
+              %p HTML, CSS and Sass, JS and React, mobile and cross-browser testing and support.
+
+          %h5.h5 And, of course, guilty pleasures
+
+          %ul.list.list--icons
+            %li.list__list-item.drag
+              .list__list-item-icon
+              %h6.h6.list__list-item-title Drag Queens
+              %p Yass henny, slaaay henny, werrrrk henny, come thru henny.
+            %li.list__list-item.games
+              .list__list-item-icon
+              %h6.h6.list__list-item-title Video Games
+              %p Pokémon, Dark Souls, and livestreaming on <a href="http://twitch.tv/traderzed" target="_blank" title="TraderZed on Twitch">Twitch</a>
+            %li.list__list-item.horror
+              .list__list-item-icon
+              %h6.h6.list__list-item-title Horror Movies
+              %p Sleepaway Camp 2 is the best horror movie ever made.
+
+        .section__content
+          %h3.h3 Still with me? Awesome!
+          %p
+            I'd love to tell you all about my process, so feel free to <a href="mailto:zack@zackginies.com" title="Email me!">email me</a> or let's connect on <a href="https://www.linkedin.com/in/zack-ginies/" target="_blank" title="LinkedIn">LinkedIn</a>.
+
     %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
     %script{src: "public/assets/js/index.js"}
